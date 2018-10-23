@@ -1,3 +1,13 @@
-<html>
-Hello, world!
-</html>
+---
+layout: default
+title: Home
+---
+
+<div class="posts">
+  {% for post in site.posts %}
+  <div class="post">
+    <a href="{{ post.url }}">{{ post.title }}</a>
+    <span class='excerpt'>{{ post.subtitle }}</span>
+  </div>
+  {% endfor %}
+</div>

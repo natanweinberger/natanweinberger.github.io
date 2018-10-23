@@ -1,0 +1,19 @@
+name: Natan Weinberger
+version: 1.0
+markdown: kramdown
+
+title: Natan Weinberger
+description: A blog with helpful tidbits
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+destination: web
+
+# url: http://natanweinberger.github.io
+baseurl: /
+
+# github:
+#   repo: https://github.com/natanweinberger/natanweinberger.github.io
+repository: natanweinberger/natanweinberger.github.io
