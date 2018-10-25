@@ -12,8 +12,9 @@ kramdown:
 destination: web
 
 # url: http://natanweinberger.github.io
-baseurl: /
+baseurl: ''
 
-# github:
-#   repo: https://github.com/natanweinberger/natanweinberger.github.io
+github:
+  user: https://github.com/natanweinberger
+  repo: https://github.com/natanweinberger/natanweinberger.github.io
 repository: natanweinberger/natanweinberger.github.io
