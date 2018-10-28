@@ -191,3 +191,20 @@
 .css .nt + .nt {
     color: #999;
 }
+
+.language-python {
+    background: #f7f2ef;
+}
+
+.code-bash {
+    padding: 4px;
+    background: #f7f2ef;
+}
+
+.tests-pass {
+    color: green;
+}
+
+.tests-fail {
+    color: red;
+}

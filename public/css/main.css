@@ -23,6 +23,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1;
+    background: #fffefc;
 }
 
 .header a {
@@ -51,7 +53,8 @@ body {
     padding: 16px;
     font-family: 'Open Sans';
 }
-.post .excerpt {
+
+.post .subtitle {
     color: #888;
     font-size: 16px;
     font-style: italic;
@@ -59,4 +62,23 @@ body {
 
 p.image {
     text-align: center;
+}
+
+.center {
+    text-align: center;
+}
+
+.standout-text {
+    font-size: 20px;
+}
+
+pre {
+    overflow: scroll;
+}
+pre.highlight {
+    padding: 4px;
+}
+
+code.highlighter-rouge {
+    font-size: 14px;
 }

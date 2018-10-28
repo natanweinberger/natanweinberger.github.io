@@ -11,7 +11,7 @@ kramdown:
 
 destination: web
 
-# url: http://natanweinberger.github.io
+prod_url: https://natanweinberger.github.io
 baseurl: ''
 
 github:
