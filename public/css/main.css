@@ -18,32 +18,59 @@ body {
     position: fixed;
     left: 0;
     right: 0;
-    width: 100%;
-    height: 4rem;
+    height: 3rem;
     font-family: Arial;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     z-index: 1;
-    /*background: #fffefc;*/
+    padding: 15px;
+}
+
+.header-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .header a {
     text-decoration: none;
-    color: black;
 }
 
-.header-home-link {
-    font-size: x-large;
-}
-
-.header-nav {
-    width: 100%;
+.navbar {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    align-items: baseline;
+    flex-grow: 1;
+    box-sizing: border-box;
+}
+
+.navbar-brand {
+    display: inline-block;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+    color: rgba(0, 0, 0, 0.9) !important;
+}
+
+.navbar-nav {
+    display: flex;
+    margin-right: auto !important;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+.nav-item {
+    list-style: none;
+    box-sizing: border-box;
+    padding-left: 20px;
+}
+
+.nav-item a {
+    color: rgba(0, 0, 0, 0.5);
 }
 
 .header-nottop {
@@ -60,6 +87,7 @@ body {
     margin: 0 auto;
     padding: 16px;
     font-family: 'Source Sans Pro';
+    -webkit-font-smoothing: antialiased;
 }
 
 .content .post {
@@ -75,6 +103,14 @@ body {
     color: #888;
     font-size: 16px;
     font-style: italic;
+}
+
+.post-date {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.reading-time {
+    color: rgba(0, 0, 0, 0.8);
 }
 
 p.image {
@@ -99,4 +135,37 @@ pre {
 code.highlighter-rouge {
     font-size: 14px;
     font-weight: bold;
+}
+
+/* Middot divider */
+.middotDivider {
+    display: inline-block;
+    padding: 0 0.42em;
+}
+
+.middotDivider::after {
+    content: '\00b7';
+}
+
+/* Horizonal rule */
+
+hr {
+    margin-top: 52px;
+    margin-bottom: 42px;
+    text-align: center;
+    border: 0;
+    height: 0;
+    overflow: visible;
+}
+
+hr::before {
+    position: relative;
+    top: -25px;
+    margin-left: 0.8em;
+    font-size: 21px;
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: 0.8em;
+    color: rgba(0, 0, 0, 0.6);
+    content: '\002e\002e\002e';
 }
