@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Intro to AWS and assuming AWS roles
+title: Intro to AWS and Assuming AWS Roles
 subtitle: ...
 ---
 
 
-This article outlines the steps to assuming an AWS role from start-to-finish, covering all the background info about AWS you need to know.
+This article outlines the steps to assuming an AWS role from start-to-finish, covering all the relevant background info about AWS as well.
 
 
 The first step of the process is to sign up for an AWS developer account. You'll enter the usual sign up information, as well as billing information, but you won't be charged for anything that follows.
@@ -19,13 +19,13 @@ __IAM user__: IAM stands for _Identity and Access Management_. A single root acc
 
 __Resource__: Everything in AWS is a resource - IAM users, S3 buckets, EC2 instances, etc. Each resource is addressable by a string called an ARN. Users need permissions to read, write, or perform any other action on a resource.
 
-__Permission/policy__: AWS sometimes uses _permission_ and _policy_ interchangeably - it would be proper to say that a permission is defined by a policy. A permission is the ability to perform an action on an AWS resource. There are generic _AWS-managed policies_ that you can assign (e.g., view IAM user info), or you can also create your own more precise policies for your own resources. Permissions can be assigned both to users and to groups.
+__Permission/policy__: AWS sometimes uses _permission_ and _policy_ interchangeably - it would be proper to say that a permission is defined by a policy. A permission is the ability to perform an action on an AWS resource. Permissions can be assigned both to users and to groups.
 
-Most policies that you create will be _managed policies_, you can create them from the Policies tab on the sidebar of the IAM console. These can be attached reusably to IAM users and groups. The alternative is to define an _inline policy_ for a user or group. You apply it directly to a user or group, and it will not appear for re-use for other users or groups elsewhere.
+Most policies that you create will be _managed policies_, you can create them from the Policies tab on the sidebar of the IAM console. These can be attached reusably to multiple IAM users and groups. The alternative is to define an _inline policy_ for a user or group. You apply it directly to a user or group, and it will not appear for re-use for other users or groups elsewhere.
 
-__Group__: AWS simplifies the process of adding the same permissions for many users by allowing you to create groups. You can create a group, say "junior developers," and add several permissions to it. You can then add IAM users to the group, who will have the permissions of the group. In a pinch, you can still add additional permissions to an individual IAM user directly, perhaps for a developer who needs temporary access to a specific resource.
+__Group__: AWS simplifies the process of adding the same permissions for many users by allowing you to create groups. Rather than attaching permissions to users directly, you apply them to the group. In a pinch, you can still add additional permissions to an individual IAM user directly, perhaps for a developer who needs temporary access to a specific resource.
 
-__Role__: Like a pseudo-user, a role has certain policies attached to it and can be assumed by any real user at any time. The real user will get back a dynamically-generated, temporary set of credentials that allow them to assume the role's policies. Usually, real users need permission to assume a role in the first place. [More from the AWS docs](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html).
+__Role__: Like a pseudo-user, a role has certain policies attached to it and can be assumed by any approved real user at any time. The real user will get back a dynamically-generated, temporary set of credentials that allow them to assume the role's policies. The real user will need permission to assume a role. [More from the AWS docs](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html).
 
 
 ### Root account vs. IAM users
