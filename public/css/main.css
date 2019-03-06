@@ -86,7 +86,8 @@ body {
     max-width: 700px;
     margin: 0 auto;
     padding: 16px;
-    font-family: 'Source Sans Pro';
+    /*font-family: 'Source Sans Pro';*/
+    font-family: Helvetica;
     -webkit-font-smoothing: antialiased;
 }
 
