@@ -7,19 +7,10 @@ permalink: /about
 
 I'm a software engineer in Philadelphia.
 
-This blog is intended to be a collection of guides, with a few motivations in particular.
+This site is a collection of guides.
 
-### Solidifying my understanding of the topic
+It's rare to go a day at work without needing to do some research to get past a blocker. Often, it takes a few different posts and StackOverflow answers to find all the relevant information that ultimately helps solve our problem. Implementing the solution itself might be quick, but finding the right posts and right combination of steps takes time to read and to process.
 
-In most posts, there's one concept that I realize I'm struggling to clearly explain to my future self. It probably means that my grasp isn't as firm as I thought and needs more attention.
+On top of that, how confident should we be that when we get past this blocker, it's the last time we'll ever encounter it? I'd bet the opposite.
 
-### Providing a single resource that will make sense in six months
-
-It usually takes more than a single StackOverflow post or page of documentation to understand a topic. These articles are intended to be a "best-of" collection of the descriptions and examples that made those concepts click for me.
-
-Ideally, this blog will cut down on the time it takes to re-learn a topic and will serve as a great reference.
-
-
-### Becoming a better communicator
-
-You can only improve with practice, right? I'm hoping that pushing myself to explain what I've learned will make me a better communicator.
+The posts on this blog are guides to get past blockers that I've run into before and expect to run into again in the future. It might be in a week, a month, or a year, but it'll save time to have the research already compiled and a set of steps that I know worked for me before. Hopefully, you find it useful too.
